@@ -1,3 +1,6 @@
+import core.Point;
+
+
 public class jart {
     public static void main(String[] args) {
         Image image = new Image(1000, 1000);
