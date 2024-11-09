@@ -1,4 +1,4 @@
-**Independent Development**
+**work organization for each developer**
    
    Developer 1:
    - Implement Displayable interface
