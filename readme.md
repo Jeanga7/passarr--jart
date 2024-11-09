@@ -1,6 +1,6 @@
 **work organization for each developer**
    
-   Developer 1:
+   Developer JGG:
    - Implement Displayable interface
    - Implement Point class
    - Start Image class implementation
@@ -18,11 +18,11 @@
 ```
 src/
 ├── interfaces/
-│   ├── Displayable.java     (Dev 1)
-│   └── Drawable.java        (Dev 1)
+│   ├── Displayable.java     (Dev JGG)
+│   └── Drawable.java        (Dev JGG)
 ├── core/
-│   ├── Point.java          (Dev 1)
-│   └── Image.java          (Dev 1)
+│   ├── Point.java          (Dev JGG)
+│   └── Image.java          (Dev JGG)
 ├── shapes/
 │   ├── Rectangle.java      (Dev 2)
 │   ├── Circle.java         (Dev 2)
@@ -35,7 +35,7 @@ src/
 #
 **Learning Focus for Each Developer:**
 
-Developer 1:
+Developer JGG:
 - Interfaces
 - File I/O
 - Graphics basics
