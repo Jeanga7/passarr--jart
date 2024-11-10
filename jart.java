@@ -1,28 +1,33 @@
-import core.Point;
-
+import core.*;
+import shapes.*;
 
 public class jart {
     public static void main(String[] args) {
         Image image = new Image(1000, 1000);
-        
+
         // Draw rectangle
-        Rectangle rectangle = new Rectangle(new Point(50, 50), new Point(300, 200));
-        rectangle.draw(image);
-        
+        for (int i = 0; i< 10; i++){
+            Point P1 = Point.random(image.getWidth(), image.getHeight());
+            Point P2 = Point.random(image.getWidth(), image.getHeight());
+            var rectangle = new Rectangle(P1, P2);
+            rectangle.draw(image);
+        }
+
         // Draw triangle
-        Triangle triangle = new Triangle(
-            new Point(100, 100),
-            new Point(900, 900),
-            new Point(100, 900)
-        );
-        triangle.draw(image);
-        
+        for (int i = 0; i < 10; i++) {
+            Point p1 = Point.random(image.getWidth(), image.getHeight());
+            Point p2 = Point.random(image.getWidth(), image.getHeight());
+            Point p3 = Point.random(image.getWidth(), image.getHeight());
+            var triangle = new Triangle(p1, p2, p3);
+            triangle.draw(image);
+        }
+
         // Draw random circles
         for (int i = 0; i < 50; i++) {
             Circle circle = Circle.random(image.getWidth(), image.getHeight());
             circle.draw(image);
         }
-        
+
         // Save the image
         image.save("image.png");
     }

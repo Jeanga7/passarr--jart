@@ -22,6 +22,14 @@ public class Image implements Displayable {
         graphics.fillRect(0, 0, width, height);
     }
 
+    public int getWidth() {
+        return bufferedImage.getWidth();
+    }
+
+    public int getHeight() {
+        return bufferedImage.getHeight();
+    }
+
     @Override
     public void display(int x, int y, Color color) {
         graphics.setColor(color);
