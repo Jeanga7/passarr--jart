@@ -18,7 +18,7 @@ public class Image implements Displayable {
     public Image(int width, int height) {
         bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         graphics = bufferedImage.createGraphics();
-        graphics.setColor(Color.WHITE);
+        graphics.setColor(Color.black);
         graphics.fillRect(0, 0, width, height);
     }
 
