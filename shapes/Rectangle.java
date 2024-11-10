@@ -19,7 +19,7 @@ public class Rectangle implements Drawable {
         this.bottomRight = new Point(
                 Math.max(P1.getX(), P2.getX()),
                 Math.max(P1.getY(), P2.getY()));
-        this.color = new Color((int) (Math.random() * 0xFFFFFF));
+        this.color = this.getColor();
     }
     public static Rectangle random(int maxWidth, int maxHeight) {
         Point P1 = Point.random(maxWidth, maxHeight);
@@ -40,6 +40,6 @@ public class Rectangle implements Drawable {
 
     @Override
     public Color getColor() {
-        return color;
+        return new Color((int) (Math.random() * 0xFFFFFF));
     }
 }

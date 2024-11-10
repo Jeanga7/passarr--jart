@@ -14,7 +14,7 @@ public class Triangle implements Drawable {
         this.p1 = p1;
         this.p2 = p2;
         this.p3 = p3;
-        this.color = new Color((int) (Math.random() * 0xFFFFFF));
+        this.color = this.getColor();
     }
     public static Triangle random(int width, int height) {
         Point p1 = Point.random(width, height);
@@ -32,6 +32,6 @@ public class Triangle implements Drawable {
 
     @Override
     public Color getColor() {
-        return color;
+        return new Color((int) (Math.random() * 0xFFFFFF));
     }
 }

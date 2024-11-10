@@ -33,7 +33,7 @@ public class Image implements Displayable {
     @Override
     public void display(int x, int y, Color color) {
         graphics.setColor(color);
-        graphics.fillOval(x, y, 5, 5);
+        graphics.fillOval(x, y, 3, 3);
     }
 
     // saving image : doc link => https://docs.oracle.com/javase/tutorial/2d/images/saveimage.html

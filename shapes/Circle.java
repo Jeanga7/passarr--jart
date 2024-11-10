@@ -14,7 +14,7 @@ public class Circle implements Drawable {
     public Circle(Point center, int radius) {
         this.center = center;
         this.radius = radius;
-        this.color = new Color((int) (Math.random() * 0xFFFFFF));
+        this.color = this.getColor();
     }
 
     public static Circle random(int maxWidth, int maxHeight) {
@@ -52,6 +52,6 @@ public class Circle implements Drawable {
 
     @Override
     public Color getColor() {
-        return color;
+        return new Color((int) (Math.random() * 0xFFFFFF));
     }
 }

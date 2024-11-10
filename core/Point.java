@@ -12,7 +12,7 @@ public class Point implements Drawable {
     public Point(int x, int y){
         this.x = x;
         this.y = y;
-        this.color = Color.BLACK;
+        // this.color = Color.BLACK;
     }
 
     public static Point random(int width, int height) {
