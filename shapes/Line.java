@@ -22,7 +22,6 @@ public class Line implements Drawable {
     public void draw(Displayable displayable) {
         Point p1 = new Point(start.getX(), start.getY());
         Point p2 = new Point(end.getX(), end.getY());
-
         LineDrawer.drawLine(displayable, p1, p2, color);
     }
 
